@@ -2,8 +2,10 @@ import './styles.css';
 
 function Form() {
     const movie = {
+        //The witcher image
+    //https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg
         id: 1,
-        image: "https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg",
+        image: "https://www.themoviedb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
         title: "The Witcher",
         count: 2,
         score: 4.5
