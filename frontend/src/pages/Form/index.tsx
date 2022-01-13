@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './styles.css';
 
 function Form() {
@@ -6,7 +7,7 @@ function Form() {
     //https://www.themoviedb.org/t/p/w533_and_h300_bestv2/jBJWaqoSCiARWtfV0GlqHrcdidd.jpg
         id: 1,
         image: "https://www.themoviedb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
-        title: "The Witcher",
+        title: "Spider-Man: No Way Home",
         count: 2,
         score: 4.5
     };
@@ -35,7 +36,10 @@ function Form() {
                         <button type="submit" className="btn btn-primary dsmovie-btn">Salvar</button>
                     </div>
                 </form >
-                <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                <Link to="/">
+                    <button className="btn btn-primary dsmovie-btn mt-3">Cancelar</button>
+                </Link>
+                
             </div >
         </div >
     );
