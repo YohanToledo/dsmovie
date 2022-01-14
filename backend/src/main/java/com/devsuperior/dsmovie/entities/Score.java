@@ -44,9 +44,5 @@ public class Score {
 		this.value = value;
 	}
 	
-	
-	
-	
-	
-	
+
 }
