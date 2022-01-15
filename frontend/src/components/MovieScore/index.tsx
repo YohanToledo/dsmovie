@@ -1,9 +1,14 @@
 import MovieStars from 'components/MovieStars';
+import { Movie } from 'types/movie';
 import './styles.css';
 
-function MovieScore() {
-    const score = 3.5;
-    const count = 13;
+type Props = {
+    movie : Movie;
+}
+
+function MovieScore(  { movie } : Props ) {
+    const score = movie.score;
+    const count = movie.count;
     return (
         <div className="dsmovie-score-container">
             <p className="dsmovie-score-value">{score > 0 ? score.toFixed(1) : '-'}</p>
