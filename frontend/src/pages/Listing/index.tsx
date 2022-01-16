@@ -6,14 +6,6 @@ import { MoviePage } from "types/movie";
 import { BASE_URL } from "utils/requests";
 
 
-const movie = {
-    id: 1,
-    image: "https://www.themoviedb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg",
-    title: "Spider-Man: No Way Home",
-    count: 2,
-    score: 4.5
-};
-
 function Listing() {
 
     const [pageNumber, setPageNumber] = useState(0);
@@ -22,7 +14,7 @@ function Listing() {
         last: true,
         totalPages: 0,
         totalElements: 0,
-        size: 12,
+        size: 10,
         number: 0,
         first: true,
         numberOfElements: 0,
@@ -39,12 +31,15 @@ function Listing() {
     }, [pageNumber]);
 
 
+    const handlePageChange = (newPageNumber : number) => {
+        setPageNumber(newPageNumber);
+    }
 
 
     return (
         <>
 
-            <Pagination />
+            <Pagination page={page} onChange={handlePageChange}/>
             <div className="container">
                 <div className="row">
 
