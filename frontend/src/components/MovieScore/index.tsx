@@ -12,7 +12,7 @@ function MovieScore(  { movie } : Props ) {
     return (
         <div className="dsmovie-score-container">
             <p className="dsmovie-score-value">{score > 0 ? score.toFixed(1) : '-'}</p>
-            <MovieStars />
+            <MovieStars score={movie.score}/>
             <p className="dsmovie-score-count">{count} avaliações</p>
         </div>
 
